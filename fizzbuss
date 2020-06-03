@@ -1,0 +1,7 @@
+# Print the numbers from 1 to 100 inclusive, each on their own line.
+# If, however, the number is a multiple of three then print Fizz instead, and if the number is a multiple of five then print Buzz.
+# For numbers which are multiples of both three and five then print FizzBuzz.
+
+r = range(1,101)
+for n in r:
+	print("FizzBuzz") if n % 3 == 0 and n % 5 == 0 else print("Fizz") if n % 3 == 0 else print("Buzz") if n% 5 == 0 else print(n)
