@@ -1,0 +1,9 @@
+# Print the lyrics to the song The 12 Days of Christmas
+
+d="First,Second,Third,Fourth,Fifth,Sixth,Seventh,Eighth,Ninth,Tenth,Eleventh,Twelfth"
+l="Twelve Drummers Drumming,:Eleven Pipers Piping,:Ten Lords-a-Leaping,:Nine Ladies Dancing,:Eight Maids-a-Milking,:Seven Swans-a-Swimming,:Six Geese-a-Laying,:Five Gold Rings,:Four Calling Birds,:Three French Hens,:Two Turtle Doves, and:A Partridge in a Pear Tree.:"
+n=-2
+for i in d.split(','): 
+ print("On the "+i+" day of Christmas\nMy true love sent to me")
+ for x in l.split(':')[n:]:print(x)
+ n-=1
