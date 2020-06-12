@@ -1,0 +1,13 @@
+# Print the lyrics to the song 99 Bottles of Beer. https://code.golf/99-bottles-of-beer#python
+
+b=" bottles of beer"
+c=" on the wall"
+h=".\n"
+y=b+c+h
+j=", "
+z=c+j
+d=h+"Take one down and pass it around, "  
+f="1 bottle of beer"
+for i in reversed(range(100)):
+  x=str(i)+b
+  print(x+z+x+d+str(i-1)+y) if i>=3 else print(x+z+x+d+f+c+h) if i==2 else print(f+z+f+d+"no more"+y) if i==1 else print("No more"+b+z+"no more"+b+h+"Go to the store and buy some more, 99"+y)
