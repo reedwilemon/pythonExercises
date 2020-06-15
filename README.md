@@ -1,3 +1,4 @@
 # pythonExercises
-
-Some exercises from https://code-golf.io/leap-years#python where the goal is to use the fewest characters.
+## Code will be ugly.
+The goal is to use the fewest amount of characters.
+Exercises from https://code-golf.io/.
