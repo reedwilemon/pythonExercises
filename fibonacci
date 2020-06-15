@@ -1,0 +1,13 @@
+# https://code.golf/fibonacci#python
+# Print the first 31 Fibonacci numbers from F0 = 0 to F30 = 832040 (inclusive), each on a separate line.
+
+a=0
+b=1
+c=0
+print(c)
+print(b)
+while c < 832040:
+ c=a+b
+ a=b
+ b=c
+ print(c)
