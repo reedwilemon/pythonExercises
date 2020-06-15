@@ -1,0 +1,9 @@
+# https://code.golf/seven-segment#python
+# Using pipes and underscores print the argument as if it were displayed on a seven segment display.
+
+import sys
+l=sys.argv[1]
+d=[[" _ ","| |","|_|"],["   ","  |","  |"],[" _ "," _|","|_ "],[" _ "," _|"," _|"],["   ","|_|","  |"],[" _ ","|_ "," _|"],[" _ ","|_ ","|_|"],[" _ ","  |","  |"],[" _ ","|_|","|_|"],[" _ ","|_|"," _|"]]
+m=[]
+for n in l:m.append([x for x in d[int(n)]])
+for i in range(3):print(''.join([[r[i] for r in m] for i in range(3)][i]))
