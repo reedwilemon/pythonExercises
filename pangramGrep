@@ -1,0 +1,6 @@
+#https://code.golf/pangram-grep#python
+# A pangram is a sentence that uses every letter of a given alphabet.
+# Write a program that will receive various sentences as arguments and print those that are valid pangrams.
+
+import sys,re,string
+[print(a) for a in sys.argv if (set(string.ascii_lowercase)==set(re.findall("[a-z]",a.lower())))]
